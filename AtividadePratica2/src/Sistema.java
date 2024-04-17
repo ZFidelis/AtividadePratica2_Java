@@ -29,5 +29,13 @@ public class Sistema {
         System.out.println("4)Listar Todos");
     }
 
-    public static void menuExclusões(){}
+    public static void menuExclusões(){
+
+        System.out.println("-- Menu de Exclusões --");
+
+        System.out.println("1)Listar ");
+        System.out.println("2)Listar ");
+        System.out.println("3)Listar ");
+        System.out.println("4)Listar Todos");
+    }
 }
