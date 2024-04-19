@@ -14,28 +14,45 @@ public class Sistema {
 
         System.out.println("-- Menu de Cadastros --");
 
-        System.out.println("1)Cadastrar ");
-        System.out.println("2)Cadastrar ");
-        System.out.println("3)Cadastrar ");
+        System.out.println("1)Cadastrar Desafiante");
+        System.out.println("2)Cadastrar Líder de Ginásio");
+        System.out.println("3)Cadastrar Performer Pokemon");
+
     }
 
     public static void menuListas(){
 
         System.out.println("-- Menu de Listagem --");
 
-        System.out.println("1)Listar ");
-        System.out.println("2)Listar ");
-        System.out.println("3)Listar ");
+        System.out.println("1)Listar Desafiante");
+        System.out.println("2)Listar Líder de Ginásio");
+        System.out.println("3)Listar Performer Pokemon");
         System.out.println("4)Listar Todos");
+
     }
 
     public static void menuExclusões(){
 
         System.out.println("-- Menu de Exclusões --");
 
-        System.out.println("1)Listar ");
-        System.out.println("2)Listar ");
-        System.out.println("3)Listar ");
-        System.out.println("4)Listar Todos");
+        System.out.println("1)Excluir Desafiante");
+        System.out.println("2)Excluir Líder de Ginásio");
+        System.out.println("3)Excluir Performer Pokemon");
+        System.out.println("4)Excluir Todos");
+
     }
+
+    public static void verificarEscolha(){}
+
+    public static void cadastroDesafiante(){}
+    public static void cadastroLider(){}
+    public static void cadastroPerformer(){}
+
+    public static void listarDesafiante(){}
+    public static void listarLider(){}
+    public static void listarPerformer(){}
+
+    public static void excluirDesafiante(){}
+    public static void excluirLider(){}
+    public static void excluirPerformer(){}
 }
