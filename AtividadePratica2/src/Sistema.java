@@ -50,19 +50,25 @@ public class Sistema {
     }
 
     public static void encaminharMenu(int op){
-        
+        int opt;
         switch (op) {
             case 0: // Encerra Programa
                 System.out.println("Programa Finalizado");
                 break;
             case 1: // Mostra menu de Cadastros
                 menuCadastros();
+                opt = Console.lerInt(); 
+                realizarCadastro(opt);
                 break;
             case 2: // Mostra menu de Listagem
                 menuConsultas();
+                opt = Console.lerInt(); 
+                realizarConsulta();
                 break;
             case 3: // Mostra menu de Exclusões
                 menuExclusoes();
+                opt = Console.lerInt(); 
+                realizarExclusao();
                 break;
 
             default:
@@ -127,6 +133,14 @@ public class Sistema {
 
     public static void realizarExclusao(){}
 
+    public static void executar(){
+        int op = 1;
 
+        while(op != 0){
+            menuPrincipal();
+            op = Console.lerInt();
+            encaminharMenu(op);
+        }
+    }
 
 }
