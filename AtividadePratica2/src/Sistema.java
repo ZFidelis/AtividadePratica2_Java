@@ -1,7 +1,7 @@
 public class Sistema {
     public static void menuPrincipal(){
 
-        System.out.println("-- Menu Principal --");
+        System.out.println("\n-- Menu Principal --");
 
         System.out.println("0)Encerrar Programa");
         System.out.println("1)Cadastros");
@@ -41,10 +41,8 @@ public class Sistema {
         System.out.println("-- Menu de Exclusões --");
 
         System.out.println("0)Voltar");
-        System.out.println("1)Excluir Desafiante");
-        System.out.println("2)Excluir Líder de Ginásio");
-        System.out.println("3)Excluir Performer Pokemon");
-        System.out.println("4)Excluir Todos");
+        System.out.println("1)Excluir Treinador");
+        System.out.println("2)Excluir Todos");
         System.out.print("Informe uma opção: ");
 
     }
@@ -62,13 +60,13 @@ public class Sistema {
                 break;
             case 2: // Mostra menu de Listagem
                 menuConsultas();
-                opt = Console.lerInt(); 
-                realizarConsulta();
+                opt = Console.lerInt();
+                realizarConsulta(opt);
                 break;
             case 3: // Mostra menu de Exclusões
                 menuExclusoes();
                 opt = Console.lerInt(); 
-                realizarExclusao();
+                realizarExclusao(opt);
                 break;
 
             default:
@@ -76,7 +74,6 @@ public class Sistema {
                 break;
         }
     }
-
 
     public static void realizarCadastro(int op){
         String nome, pokePrincipal;
@@ -96,7 +93,8 @@ public class Sistema {
                 System.out.print("Pokémon Principal: ");
                 pokePrincipal = Console.lerString();
 
-
+                Treinador treinador = new Treinador(nome,idade,pokePrincipal);
+                CadastroTreinadores.cadastro(treinador);
                 // Desafiante desafiante1 = new Desafiante(nome,idade,pokePrincipal);
                 break;
             case 2: // Cadastrar Lider de Ginásio
@@ -129,9 +127,44 @@ public class Sistema {
         }
     }
 
-    public static void realizarConsulta(){}
+    public static void realizarConsulta(int op){
+        switch (op) {
+            case 0:
+                
+                break;
+            case 1:
+                for (Treinador treinadorT : CadastroTreinadores.getListaTreinadores()) {
+                    System.out.println(treinadorT);
+                }
+                break;
+            default:
+                System.out.println("Opção Inválida");
+                break;
+        }
+    }
 
-    public static void realizarExclusao(){}
+    public static void realizarExclusao(int op){
+        switch (op) {
+            case 0: // Voltar para Menu Principal
+                
+                break;
+            case 1: // Excluir Treinador
+                System.out.print("Nome do Treinador: ");
+                String nomeEx = Console.lerString();
+                boolean excluido = CadastroTreinadores.excluirTreinador(nomeEx);
+
+                if(excluido){
+                    System.out.println("Treinador excluído com sucesso");
+                }
+                else{
+                    System.out.println("Treinador " + nomeEx + " não encontrado");
+                }
+                break;
+            default:
+                System.out.println("Opção Inválida");
+                break;
+        }
+    }
 
     public static void executar(){
         int op = 1;
