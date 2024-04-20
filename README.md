@@ -5,34 +5,34 @@ Autores: Henry Kenzo Karasawa e Isaac Zapoctoczny Fidelis
 A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, "Performer" e "Professor". Um exemplo de cada calsse abaixo:
 
 <h3>Lider de Ginásio</h3>
-<p>Nome: Brock</p>
-<p>Idade: 15</p>
-<p>Pokémon Principal: Onix</p>
-<p>Cidade Natal: Pewter</p>
-<p>Tipo de Ginásio: Tipo Pedra</p>
-<p>Insígnia: Insígnia Rocha</p>
+<p>Nome: Brock</n>
+Idade: 15</n>
+Pokémon Principal: Onix</n>
+Cidade Natal: Pewter</n>
+Tipo de Ginásio: Tipo Pedra</n>
+Insígnia: Insígnia Rocha</n>
 
 <h3>Desafiante</h3>
-<p>Nome: Ash Ketchum</p>
-<p>Idade: 10</p>
-<p>Pokémon Principal: Pikachu</p>
-<p>Cidade Natal: Pallet</p>
-<p>Ranking: 1</p>
-<p>Número de Insígnias: 6</p>
-<p>Título: Monarca (Campeão Mundial)</p>
+Nome: Ash Ketchum</n>
+Idade: 10</n>
+Pokémon Principal: Pikachu</n>
+Cidade Natal: Pallet</n>
+Ranking: 1</n>
+Número de Insígnias: 6</n>
+Título: Monarca (Campeão Mundial)</n>
 
 <h3>Performer</h3>
-<p>Nome: Serena</p>
-<p>Idade: 10</p>
-<p>Pokémon Principal: Dexphox</p>
-<p>Cidade Natal: Vaniville</p>
-<p>Estilo Dança: Pop</p>
-<p>Título: Cordenadora</p>
+Nome: Serena</n>
+Idade: 10</n>
+Pokémon Principal: Dexphox</n>
+Cidade Natal: Vaniville</n>
+Estilo Dança: Pop</n>
+Título: Cordenadora</n>
 
 <h3>Pofessor</h3>
-<p>Nome: Samuel Carvalho</p>
-<p>Idade: 50</p>
-<p>Pokémon Principal: Muk</p>
-<p>Cidade Natal: Pallet</p>
-<p>Pokémons iniciais que esse professor oferece: Charmander, Squirtle e Bulbasaur</p>
-<p>Pesuisa Atual: "A relação entre pessoas e Pokémon"</p>
+Nome: Samuel Carvalho</n>
+Idade: 50</n>
+Pokémon Principal: Muk</n>
+Cidade Natal: Pallet</n>
+Pokémons iniciais que esse professor oferece: Charmander, Squirtle e Bulbasaur</n>
+Pesuisa Atual: "A relação entre pessoas e Pokémon"</p>
