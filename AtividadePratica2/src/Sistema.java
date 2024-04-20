@@ -76,7 +76,7 @@ public class Sistema {
     }
 
     public static void realizarCadastro(int op){
-        String nome, pokePrincipal;
+        String nome, pokePrincipal, cidadeNatal;
         int idade;
 
         switch (op) {
@@ -92,10 +92,12 @@ public class Sistema {
                 idade = Console.lerInt();
                 System.out.print("Pokémon Principal: ");
                 pokePrincipal = Console.lerString();
+                System.out.print("Cidade Natal: ");
+                cidadeNatal = Console.lerString();
 
                 Treinador treinador = new Treinador(nome,idade,pokePrincipal);
                 CadastroTreinadores.cadastro(treinador);
-                // Desafiante desafiante1 = new Desafiante(nome,idade,pokePrincipal);
+                // Desafiante desafiante1 = new Desafiante(nome,idade,pokePrincipal,cidadeNatal);
                 break;
             case 2: // Cadastrar Lider de Ginásio
                 System.out.println("\n-> Cadastro de Líder de Ginásio <-\n");
@@ -106,8 +108,10 @@ public class Sistema {
                 idade = Console.lerInt();
                 System.out.print("Pokémon Principal: ");
                 pokePrincipal = Console.lerString();
+                System.out.print("Cidade Natal: ");
+                cidadeNatal = Console.lerString();
                 
-                // Lider lider1 = new Lider(nome,idade,pokePrincipal);
+                // Lider lider1 = new Lider(nome,idade,pokePrincipal,cidadeNatal);
                 break;
             case 3: // Cadastrar Performer Pokemon
                 System.out.println("\n-> Cadastro de Performer Pokémon <-\n");
@@ -118,8 +122,10 @@ public class Sistema {
                 idade = Console.lerInt();
                 System.out.print("Pokémon Principal: ");
                 pokePrincipal = Console.lerString();
+                System.out.print("Cidade Natal: ");
+                cidadeNatal = Console.lerString();
                 
-                // Performer performer1 = new Performer(nome,idade,pokePrincipal);
+                // Performer performer1 = new Performer(nome,idade,pokePrincipal,cidadeNatal);
                 break;
             default:
                 System.out.println("Opção Inválida");

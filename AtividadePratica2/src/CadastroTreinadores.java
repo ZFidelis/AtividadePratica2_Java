@@ -16,7 +16,7 @@ public class CadastroTreinadores {
     public static boolean excluirTreinador(String nome){
 
         for (Treinador treinadorT : listaTreinadores) {
-            if (treinadorT.getNome() == nome) {
+            if (treinadorT.getNome().equals(nome)) {
                 listaTreinadores.remove(treinadorT);
                 System.out.println("enter-\n");
                 return true;
