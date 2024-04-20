@@ -29,7 +29,7 @@ Cidade Natal: Vaniville<br />
 Estilo Dança: Pop<br />
 Título: Cordenadora<br />
 
-<h3>Pofessor</h3>
+<h3>Professor</h3>
 Nome: Samuel Carvalho<br />
 Idade: 50<br />
 Pokémon Principal: Muk<br />
