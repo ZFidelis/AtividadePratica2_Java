@@ -2,7 +2,7 @@
 
 Autores: Henry Kenzo Karasawa e Isaac Zapoctoczny Fidelis
 
-A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, "Performer" e "Professor". Um exemplo de cada calsse abaixo:
+A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, "Performer" e "Professor". Um exemplo de cada classe abaixo:
 
 <h3>Lider de Ginásio</h3>
 
