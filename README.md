@@ -27,10 +27,10 @@ A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, 
 
 - `Nome:` Serena
 - `Idade:` 10
-- `Pokémon Principal:` Dexphox
+- `Pokémon Principal:` Delphox
 - `Cidade Natal:` Vaniville
 - `Estilo Dança:` Pop
-- `Título:` Cordenadora
+- `Título:` Coordenadora
 
 <h3>Professor</h3>
 
@@ -38,5 +38,5 @@ A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, 
 - `Idade:` 50
 - `Pokémon Principal:` Muk
 - `Cidade Natal:` Pallet
-- `Pokémons iniciais que esse professor oferece:` Charmander, Squirtle e Bulbasaur
+- `Pokémons iniciais que esse professor oferece:` Charmander, Squirtle e Bulbassaur
 - `Pesuisa Atual:` "A relação entre pessoas e Pokémon"
