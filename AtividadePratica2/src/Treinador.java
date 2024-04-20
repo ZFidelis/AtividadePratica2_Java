@@ -2,16 +2,17 @@ public class Treinador {
     private String nome;
     private int idade;
     private String pokePrincipal;
+    private String cidadeNatal; 
     
     public Treinador() {
     }
-
-    public Treinador(String nome, int idade, String pokePrincipal) {
+    
+    public Treinador(String nome, int idade, String pokePrincipal, String cidadeNatal) {
         this.nome = nome;
         this.idade = idade;
         this.pokePrincipal = pokePrincipal;
+        this.cidadeNatal = cidadeNatal;
     }
-
 
     public String getNome() {
         return nome;
@@ -37,13 +38,19 @@ public class Treinador {
         this.pokePrincipal = pokePrincipal;
     }
 
-    
+    public String getCidadeNatal() {
+        return cidadeNatal;
+    }
+
+    public void setCidadeNatal(String cidadeNatal) {
+        this.cidadeNatal = cidadeNatal;
+    }
+
     @Override
     public String toString() {
-        String text = "\nNome: " + nome + "\nIdade: " + idade + "\nPokémon Principal: " + pokePrincipal + "\n";
+        String text = "\nNome: " + nome + "\nIdade: " + idade + "\nPokémon Principal: " + pokePrincipal + "\nCidade Natal: " + cidadeNatal;
 
         return text;
     }
-
 
 }
