@@ -95,9 +95,9 @@ public class Sistema {
                 System.out.print("Cidade Natal: ");
                 cidadeNatal = Console.lerString();
 
-                Treinador treinador = new Treinador(nome,idade,pokePrincipal);
-                CadastroTreinadores.cadastro(treinador);
-                // Desafiante desafiante1 = new Desafiante(nome,idade,pokePrincipal,cidadeNatal);
+                Treinador desafiante = new Treinador(nome,idade,pokePrincipal,cidadeNatal);
+                // Desafiante desanfiante = new Desafiante(nome,idade,pokePrincipal,cidadeNatal);
+                CadastroTreinadores.cadastro(desafiante);
                 break;
             case 2: // Cadastrar Lider de Ginásio
                 System.out.println("\n-> Cadastro de Líder de Ginásio <-\n");
@@ -110,8 +110,13 @@ public class Sistema {
                 pokePrincipal = Console.lerString();
                 System.out.print("Cidade Natal: ");
                 cidadeNatal = Console.lerString();
+                System.out.print("Elemento do Ginásio: ");
+                String tipoGinasio = Console.lerString();
+                System.out.print("Nome da Insígnia: ");
+                String insignia = Console.lerString();
                 
-                // Lider lider1 = new Lider(nome,idade,pokePrincipal,cidadeNatal);
+                LiderGinasio lider = new LiderGinasio(nome,idade,pokePrincipal,cidadeNatal,tipoGinasio, insignia);
+                CadastroTreinadores.cadastro(lider);
                 break;
             case 3: // Cadastrar Performer Pokemon
                 System.out.println("\n-> Cadastro de Performer Pokémon <-\n");
