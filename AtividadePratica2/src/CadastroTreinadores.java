@@ -28,6 +28,17 @@ public class CadastroTreinadores {
         listaTreinadores.removeAll(listaTreinadores);
     }
 
+    public static int buscarTreinador(String nome){
+
+        for (Treinador temporario: CadastroTreinadores.getListaTreinadores()) {
+            if (temporario.getNome().equals(nome)) {
+                System.out.println(temporario);
+                return 0;
+            }
+        }
+        return -1;
+    }
+
 
 
 

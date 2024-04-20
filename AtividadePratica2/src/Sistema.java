@@ -7,6 +7,7 @@ public class Sistema {
         System.out.println("1)Cadastros");
         System.out.println("2)Lista");
         System.out.println("3)Exclusões");
+        System.out.println("4)Buscar Registro");
         System.out.print("Informe uma opção: ");
 
     }
@@ -70,9 +71,19 @@ public class Sistema {
                 opt = Console.lerInt(); 
                 realizarExclusao(opt);
                 break;
+            case 4: // Mostra Buscas
+                System.out.println("\n-- Buscar por Nome --");
+                System.out.print("Digite um nome:");
+                String buscaNome = Console.lerString();
+                int indice = CadastroTreinadores.buscarTreinador(buscaNome);
+                if (indice == -1) {
+                    System.out.println("\nRegistro Não Encontrado");
+                }
+                break;
+                
 
             default:
-                System.out.println("Opção Inválida");
+                System.out.println("\nOpção Inválida");
                 break;
         }
     }
