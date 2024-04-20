@@ -4,7 +4,7 @@ Autores: Henry Kenzo Karasawa e Isaac Zapoctoczny Fidelis
 
 A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, "Performer" e "Professor". Um exemplo de cada calsse abaixo:
 
-<h4>Lider de Ginásio</h4>
+<h3>Lider de Ginásio</h3>
 <p>`Nome:` Brock</p>
 <p>`Idade:` 15</p>
 <p>`Pokémon Principal:` Onix</p>
@@ -12,7 +12,7 @@ A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, 
 <p>`Tipo de Ginásio:` Tipo Pedra</p>
 <p>`Insígnia:` Insígnia Rocha</p>
 
-<h4>Desafiante</h4>
+<h3>Desafiante</h3>
 <p>`Nome:` Ash Ketchum</p>
 <p>`Idade:` 10</p>
 <p>`Pokémon Principal:` Pikachu</p>
@@ -21,7 +21,7 @@ A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, 
 <p>`Número de Insígnias:` 6</p>
 <p>`Título:` Monarca (Campeão Mundial)</p>
 
-<h4>Performer</h4>
+<h3>Performer</h3>
 <p>`Nome:` Serena</p>
 <p>`Idade:` 10</p>
 <p>`Pokémon Principal:` Dexphox</p>
@@ -29,7 +29,7 @@ A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, 
 <p>`Estilo Dança:` Pop</p>
 <p>`Título:` Cordenadora</p>
 
-<h4>Pofessor</h4>
+<h3>Pofessor</h3>
 <p>`Nome:` Samuel Carvalho</p>
 <p>`Idade:` 50</p>
 <p>`Pokémon Principal:` Muk</p>
