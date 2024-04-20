@@ -25,9 +25,7 @@ public class CadastroTreinadores {
     }
 
     public static void excluirTodos(){
-        for (Treinador treinadorT : listaTreinadores) {
-            listaTreinadores.remove(treinadorT);
-        }
+        listaTreinadores.removeAll(listaTreinadores);
     }
 
 
