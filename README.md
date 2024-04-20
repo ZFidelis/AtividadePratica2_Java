@@ -4,7 +4,7 @@ Autores: Henry Kenzo Karasawa e Isaac Zapoctoczny Fidelis
 
 A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, "Performer" e "Professor". Um exemplo de cada calsse abaixo:
 
-<h2>Lider de Ginásio:</h2>
+<h4>Lider de Ginásio</h4>
 Nome: Brock
 Idade: 15
 Pokémon Principal: Onix
@@ -12,7 +12,7 @@ Cidade Natal: Pewter
 Tipo de Ginásio: Tipo Pedra
 Insígnia: Insígnia Rocha
 
-<h2>Desafiante:</h2>
+<h4>Desafiante</h4>
 Nome: Ash Ketchum
 Idade: 10
 Pokémon Principal: Pikachu
@@ -21,7 +21,7 @@ Ranking: 1
 Número de Insígnias: 6
 Título: Monarca (Campeão Mundial)
 
-<h2>Performer:</h2>
+<h4>Performer</h4>
 Nome: Serena
 Idade: 10
 Pokémon Principal: Dexphox
@@ -29,7 +29,7 @@ Cidade Natal: Vaniville
 Estilo Dança: Pop
 Título: Cordenadora
 
-<h2>Pofessor:</h2>
+<h4>Pofessor</h4>
 Nome: Samuel Carvalho
 Idade: 50
 Pokémon Principal: Muk
