@@ -5,34 +5,34 @@ Autores: Henry Kenzo Karasawa e Isaac Zapoctoczny Fidelis
 A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, "Performer" e "Professor". Um exemplo de cada calsse abaixo:
 
 <h3>Lider de Ginásio</h3>
-<p>Nome: Brock</n>
-Idade: 15</n>
-Pokémon Principal: Onix</n>
-Cidade Natal: Pewter</n>
-Tipo de Ginásio: Tipo Pedra</n>
-Insígnia: Insígnia Rocha</n>
+<p>Nome: Brock.
+Idade: 15.
+Pokémon Principal: Onix.
+Cidade Natal: Pewter.
+Tipo de Ginásio: Tipo Pedra.
+Insígnia: Insígnia Rocha.
 
 <h3>Desafiante</h3>
-Nome: Ash Ketchum</n>
-Idade: 10</n>
-Pokémon Principal: Pikachu</n>
-Cidade Natal: Pallet</n>
-Ranking: 1</n>
-Número de Insígnias: 6</n>
-Título: Monarca (Campeão Mundial)</n>
+Nome: Ash Ketchum.
+Idade: 10.
+Pokémon Principal: Pikachu.
+Cidade Natal: Pallet.
+Ranking: 1.
+Número de Insígnias: 6.
+Título: Monarca (Campeão Mundial).
 
 <h3>Performer</h3>
-Nome: Serena</n>
-Idade: 10</n>
-Pokémon Principal: Dexphox</n>
-Cidade Natal: Vaniville</n>
-Estilo Dança: Pop</n>
-Título: Cordenadora</n>
+Nome: Serena.
+Idade: 10.
+Pokémon Principal: Dexphox.
+Cidade Natal: Vaniville.
+Estilo Dança: Pop.
+Título: Cordenadora.
 
 <h3>Pofessor</h3>
-Nome: Samuel Carvalho</n>
-Idade: 50</n>
-Pokémon Principal: Muk</n>
-Cidade Natal: Pallet</n>
-Pokémons iniciais que esse professor oferece: Charmander, Squirtle e Bulbasaur</n>
+Nome: Samuel Carvalho.
+Idade: 50.
+Pokémon Principal: Muk.
+Cidade Natal: Pallet.
+Pokémons iniciais que esse professor oferece: Charmander, Squirtle e Bulbasaur.
 Pesuisa Atual: "A relação entre pessoas e Pokémon"</p>
