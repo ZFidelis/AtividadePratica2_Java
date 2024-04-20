@@ -18,13 +18,19 @@ public class CadastroTreinadores {
         for (Treinador treinadorT : listaTreinadores) {
             if (treinadorT.getNome().equals(nome)) {
                 listaTreinadores.remove(treinadorT);
-                System.out.println("enter-\n");
                 return true;
             }
-            System.out.println("pass-\n");
         }
         return false;
     }
+
+    public static void excluirTodos(){
+        for (Treinador treinadorT : listaTreinadores) {
+            listaTreinadores.remove(treinadorT);
+        }
+    }
+
+
 
 
 

@@ -13,32 +13,34 @@ public class Sistema {
 
     public static void menuCadastros(){
 
-        System.out.println("-- Menu de Cadastros --");
+        System.out.println("\n-- Menu de Cadastros --");
 
         System.out.println("0)Voltar");
         System.out.println("1)Cadastrar Desafiante");
         System.out.println("2)Cadastrar Líder de Ginásio");
         System.out.println("3)Cadastrar Performer Pokemon");
+        System.out.println("4)Cadastrar Professor");
         System.out.print("Informe uma opção: ");
 
     }
 
     public static void menuConsultas(){
 
-        System.out.println("-- Menu de Listagem --");
+        System.out.println("\n-- Menu de Listagem --");
 
         System.out.println("0)Voltar");
         System.out.println("1)Listar Desafiante");
         System.out.println("2)Listar Líder de Ginásio");
         System.out.println("3)Listar Performer Pokemon");
-        System.out.println("4)Listar Todos");
+        System.out.println("4)Listar Professor");
+        System.out.println("5)Listar Todos");
         System.out.print("Informe uma opção: ");
 
     }
 
     public static void menuExclusoes(){
 
-        System.out.println("-- Menu de Exclusões --");
+        System.out.println("\n-- Menu de Exclusões --");
 
         System.out.println("0)Voltar");
         System.out.println("1)Excluir Treinador");
@@ -86,7 +88,7 @@ public class Sistema {
             case 1: // Cadastrar Desafiante
                 System.out.println("\n-> Cadastro de Desafiante <-\n");
                 
-                System.out.print("Nome do Treinador: ");
+                System.out.print("Nome do Desafiante(a): ");
                 nome = Console.lerString();
                 System.out.print("Idade: ");
                 idade = Console.lerInt();
@@ -94,15 +96,20 @@ public class Sistema {
                 pokePrincipal = Console.lerString();
                 System.out.print("Cidade Natal: ");
                 cidadeNatal = Console.lerString();
+                System.out.print("Posição no Ranking: ");
+                int ranking = Console.lerInt();
+                System.out.print("Quantidade de Insígnias: ");
+                int numeroInsignias = Console.lerInt();
+                System.out.print("Título (N/A caso não tenha): ");
+                String tituloD = Console.lerString();
 
-                Treinador desafiante = new Treinador(nome,idade,pokePrincipal,cidadeNatal);
-                // Desafiante desanfiante = new Desafiante(nome,idade,pokePrincipal,cidadeNatal);
+                Desafiante desafiante = new Desafiante(nome,idade,pokePrincipal,cidadeNatal,ranking,numeroInsignias,tituloD);
                 CadastroTreinadores.cadastro(desafiante);
                 break;
             case 2: // Cadastrar Lider de Ginásio
                 System.out.println("\n-> Cadastro de Líder de Ginásio <-\n");
                 
-                System.out.print("Nome do Treinador: ");
+                System.out.print("Nome do Líder(a): ");
                 nome = Console.lerString();
                 System.out.print("Idade: ");
                 idade = Console.lerInt();
@@ -121,7 +128,7 @@ public class Sistema {
             case 3: // Cadastrar Performer Pokemon
                 System.out.println("\n-> Cadastro de Performer Pokémon <-\n");
                 
-                System.out.print("Nome do Treinador: ");
+                System.out.print("Nome da Performer: ");
                 nome = Console.lerString();
                 System.out.print("Idade: ");
                 idade = Console.lerInt();
@@ -129,11 +136,36 @@ public class Sistema {
                 pokePrincipal = Console.lerString();
                 System.out.print("Cidade Natal: ");
                 cidadeNatal = Console.lerString();
+                System.out.print("Estilo de Dança: ");
+                String estiloDanca = Console.lerString();
+                System.out.print("Título (N/A caso não tenha): ");
+                String tituloP = Console.lerString();
                 
-                // Performer performer1 = new Performer(nome,idade,pokePrincipal,cidadeNatal);
+                Performer performer = new Performer(nome,idade,pokePrincipal,cidadeNatal,estiloDanca,tituloP);
+                CadastroTreinadores.cadastro(performer);
+                break;
+            case 4: // Cadastrar Professor
+                System.out.println("\n-> Cadastro de Professor <-\n");
+                
+                System.out.print("Nome do Professor(a): ");
+                nome = Console.lerString();
+                System.out.print("Idade: ");
+                idade = Console.lerInt();
+                System.out.print("Pokémon Principal: ");
+                pokePrincipal = Console.lerString();
+                System.out.print("Cidade Natal: ");
+                cidadeNatal = Console.lerString();
+                System.out.print("Pokemons disponibilizados pelo Professor(a): ");
+                String pokemonsIniciais = Console.lerString();
+                System.out.print("Pesquisa atual: ");
+                String pesquisaAtual = Console.lerString();
+                
+                Professor professor = new Professor(nome,idade,pokePrincipal,cidadeNatal,pokemonsIniciais,pesquisaAtual);
+                CadastroTreinadores.cadastro(professor);
                 break;
             default:
                 System.out.println("Opção Inválida");
+                encaminharMenu(1);
                 break;
         }
     }
@@ -143,13 +175,42 @@ public class Sistema {
             case 0:
                 
                 break;
-            case 1:
+            case 1: // Listar Desafiantes
+                for (Treinador treinadorT : CadastroTreinadores.getListaTreinadores()) {
+                    if (treinadorT instanceof Desafiante){
+                        System.out.println(treinadorT);
+                    }
+                }
+                break;
+            case 2: // Listar Líderes
+                for (Treinador treinadorT : CadastroTreinadores.getListaTreinadores()) {
+                    if (treinadorT instanceof LiderGinasio){
+                        System.out.println(treinadorT);
+                    }
+                }
+                break;
+            case 3: // Listar Performers
+                for (Treinador treinadorT : CadastroTreinadores.getListaTreinadores()) {
+                    if (treinadorT instanceof Performer){
+                        System.out.println(treinadorT);
+                    }
+                }
+                break;
+            case 4: // Listar Professores
+                for (Treinador treinadorT : CadastroTreinadores.getListaTreinadores()) {
+                    if (treinadorT instanceof Professor){
+                        System.out.println(treinadorT);
+                    }
+                }
+                break;
+            case 5: // Listar Tudo
                 for (Treinador treinadorT : CadastroTreinadores.getListaTreinadores()) {
                     System.out.println(treinadorT);
                 }
                 break;
             default:
                 System.out.println("Opção Inválida");
+                encaminharMenu(2);
                 break;
         }
     }
@@ -160,19 +221,24 @@ public class Sistema {
                 
                 break;
             case 1: // Excluir Treinador
-                System.out.print("Nome do Treinador: ");
+                System.out.print("Nome do registro que deseja excluir: ");
                 String nomeEx = Console.lerString();
                 boolean excluido = CadastroTreinadores.excluirTreinador(nomeEx);
 
                 if(excluido){
-                    System.out.println("Treinador excluído com sucesso");
+                    System.out.println("Cadastro excluído com sucesso");
                 }
                 else{
-                    System.out.println("Treinador " + nomeEx + " não encontrado");
+                    System.out.println("Cadastro " + nomeEx + " não encontrado");
                 }
+                break;
+            case 2: // Excluir Todos
+                CadastroTreinadores.excluirTodos();
+                System.out.println("Todos os Registros foram excluidos");
                 break;
             default:
                 System.out.println("Opção Inválida");
+                encaminharMenu(3);
                 break;
         }
     }
