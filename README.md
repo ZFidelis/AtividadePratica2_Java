@@ -2,4 +2,4 @@
 
 Autores: Henry Kenzo Karasawa e Isaac Zapoctoczny Fidelis
 
-A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Treinador_de_Elite", "Performer" e "Professor".
+A superclasse será "Treinador". Com as subclasses "LiderGinasio", "Desafiante, "Performer" e "Professor".
